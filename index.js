@@ -52,6 +52,7 @@ module.exports = async (req, res) => {
 			}
 			break;
 		default:
+			response = decodeURIComponent(response);
 			break;
 	}
 

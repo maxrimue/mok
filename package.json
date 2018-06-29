@@ -1,0 +1,28 @@
+{
+	"name": "mok",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "npm run prettier && xo && npm run fake-test",
+		"prettier": "prettier \"**/*.js\"",
+		"prettier-fix": "npm run prettier -- --fix",
+		"dev": "micro-dev",
+		"start": "micro",
+		"deploy": "now --public && now alias mok.now.sh"
+	},
+	"author": "Max <maxrimue> Rittmüller",
+	"license": "ISC",
+	"devDependencies": {
+		"ava": "^0.25.0",
+		"micro-dev": "^3.0.0",
+		"prettier": "^1.13.6",
+		"xo": "^0.21.1"
+	},
+	"engines": {
+		"node": "8"
+	},
+	"dependencies": {
+		"micro": "^9.3.2"
+	}
+}
